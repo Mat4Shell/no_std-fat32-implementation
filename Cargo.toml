@@ -1,0 +1,13 @@
+[package]
+name = "no_std"
+version = "0.1.0"
+edition = "2021"
+authors = ["Mat4Shell <me@mat4shell.com"]
+description = "no_std FAT32 filesystem parser and writer"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+
+[features]
+default = []
+
