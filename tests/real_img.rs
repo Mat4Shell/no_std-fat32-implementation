@@ -30,7 +30,7 @@ impl BlockDevice for FileBlockDevice {
 
 #[test]
 fn read_real_image() {
-    let dev = FileBlockDevice::open(r"C:\Users\mathi\fat32.img");
+    let dev = FileBlockDevice::open(r"test_images/fat32.img");
     let vol = Fat32Volume::open(dev).unwrap();
 
     println!("Volume size: {} bytes", vol.volume_size());

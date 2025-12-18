@@ -36,7 +36,7 @@ impl BlockDevice for FileBlockDevice {
 
 #[test]
 fn write_file_to_real_image() {
-    let img_path = r"C:\Users\mathi\fat32.img";
+    let img_path = r"test_images/fat32.img";
 
     let dev = FileBlockDevice::open(img_path);
     let mut volume = Fat32Volume::open(dev).expect("Failed to open FAT32 volume");
