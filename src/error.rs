@@ -3,4 +3,5 @@ pub enum FatError {
     InvalidBootSector,
     IoError,
     NotFound,
+    NoFreeDirectoryEntry,
 }
