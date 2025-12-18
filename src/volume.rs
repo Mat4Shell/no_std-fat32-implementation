@@ -3,7 +3,7 @@ use crate::{block::BlockDevice, boot_sector::BootSector, error::FatError};
 /// FAT32 volume representation
 pub struct Fat32Volume<B: BlockDevice> {
     pub boot: BootSector,
-    device: B,
+    pub(crate) device: B,
 }
 
 impl<B: BlockDevice> Fat32Volume<B> {
